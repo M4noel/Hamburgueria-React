@@ -1,0 +1,64 @@
+/* Header.scss */
+
+.header {
+ 
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 100;
+
+  @media (max-width: 768px) {
+    /* Reduzir o padding em telas menores */
+    padding: 10px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo__url {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+
+      .logo {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      .logo__text {
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+
+    .nav {
+      .nav__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .nav__item {
+          display: inline-block;
+          margin-right: 20px;
+
+          .nav__link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s;
+
+            &:hover {
+              color: #0056b3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
