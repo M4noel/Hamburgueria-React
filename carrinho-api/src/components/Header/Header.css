@@ -1,0 +1,114 @@
+/* Header.scss */
+.header {
+  top: 0;
+  width: 100%;
+  background-color: #faebd7;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 100;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+}
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+.header .container .logo__url {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.header .container .logo__url .logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header .container .logo__url .logo__text {
+  font-size: 30px;
+  margin: 0;
+  margin-left: 15px;
+  font-family: cursive;
+  cursor: pointer;
+}
+.header .container .nav .nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+}
+@media (max-width: 768px) {
+  .header .container .nav .nav__list {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 111px;
+  }
+}
+.header .container .nav .nav__list .nav__item {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 21px;
+  background-color: #efa335;
+  border-radius: 11%;
+  padding: 7px 17px 10px 18px;
+}
+.header .container .nav .nav__list .nav__item .nav__link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.header .container .nav .nav__list .nav__item .nav__link:hover {
+  color: #0056b3;
+}
+.header .container .ctas {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .header .container .ctas {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+.header .container .ctas .cta {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+.header .container .ctas .cta:hover {
+  background-color: #0056b3;
+}
+.header .container .ctas .cta + .cta {
+  margin-left: 10px;
+}
+
+/* Restante dos estilos *//*# sourceMappingURL=Header.css.map */

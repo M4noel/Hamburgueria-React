@@ -1,0 +1,126 @@
+/* Header.scss */
+
+.header {
+  top: 0;
+  width: 100%;
+  background-color: #faebd7;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 100;
+  border: 1px solid #000;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+    .logo__url {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      margin-left: 25px;
+      cursor: pointer;
+
+      .logo {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .logo__text {
+        font-size: 30px;
+        margin: 0;
+        margin-left: 15px;
+        font-family: cursive;
+        cursor: pointer;
+      }
+    }
+
+    .nav {
+      .nav__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 15px;
+
+        @media (max-width: 768px) {
+          margin: 0;
+          margin-top: 10px;
+          margin-left: 111px;
+        }
+
+        .nav__item {
+          display: inline-block;
+          margin-right: 20px;
+          font-size: 21px;
+          background-color: #efa335;
+          border-radius: 11%;
+          padding: 7px 17px 10px 18px;
+
+          .nav__link {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s;
+
+            &:hover {
+              color: #0056b3;
+            }
+          }
+        }
+      }
+    }
+
+    .ctas {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      margin-left: 15px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      .cta {
+        background-color: #000000;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14px;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+
+        & + .cta {
+          margin-left: 10px;
+          
+        }
+      }
+    }
+  }
+}
+
+/* Restante dos estilos */

@@ -1,0 +1,47 @@
+/* footer.scss */
+
+.footer {
+  background-color: #faebd7;
+  color: white;
+  padding: 70px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    /* Reduzir o padding em telas menores */
+    padding: 40px;
+  }
+
+  .social-links {
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      /* Ajustar a margem em telas menores */
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+
+      @media (max-width: 768px) {
+        /* Reduzir o tamanho da fonte em telas menores */
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 18px;
+    color: #000;
+
+    @media (max-width: 768px) {
+      /* Reduzir o tamanho da fonte em telas menores */
+      font-size: 12px;
+    }
+  }
+}
