@@ -20,6 +20,19 @@ json-server --watch db.json --port 3001
 
 Projeto Reestruturado com Utilização de API Própria Desenvolvida em Node.js e MongoDB
 
+## Iniciar Carrinho-api
+
+### Start front
+```
+npm install
+npm start
+```
+### Start backend/ Api-Lanche.on.net
+```
+npm install
+npm start
+```
+
 ### Home
 
 ![FireShot Capture 001 - Hamburgueria - localhost](https://github.com/M4noel/Hamburgueria-React/assets/86434035/5073c500-1a58-4b3e-b98a-d3b028314138)
