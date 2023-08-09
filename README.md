@@ -18,7 +18,7 @@ json-server --watch db.json --port 3001
 ```
 ### Carrinho-api
 
-Projeto Revitalizado com Uso de API Personalizada Desenvolvida em Node.js e MongoDB
+Projeto Reestruturado com Utilização de API Própria Desenvolvida em Node.js e MongoDB
 
 ### Home
 
